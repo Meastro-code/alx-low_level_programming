@@ -12,10 +12,10 @@ int i;
 long int m;
 long long int p;
 float h;
-printf("Size of a char:%lu\n",(unsignedlong)sizeof(c));
-printf("Size of an int:%lu\n",(unsignedlong)sizeof(i));
-printf("Size of a long int:%lu\n",(unsignedlong)sizeof(m));
-printf("Size of a long long int:%lu\n",(unsignedlong)sizeof(p));
-printf("Size of a float:%lu\n",(unsignedlong)sizeof(h));
+printf("Size of a char:%lu\n",(unsignedint)sizeof(c));
+printf("Size of an int:%lu\n",(unsignedint)sizeof(i));
+printf("Size of a long int:%lu\n",(unsignedint)sizeof(m));
+printf("Size of a long long int:%lu\n",(unsignedint)sizeof(p));
+printf("Size of a float:%lu\n",(unsignedint)sizeof(h));
 return (0);
 }
