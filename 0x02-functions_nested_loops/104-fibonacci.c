@@ -20,7 +20,7 @@ prev2 = 0;
 curr1 = 2;
 curr2 = 0;
 printf("%lu, %lu", prev1, curr1);
-for (i = 3; i <= 96; i++)
+for (i = 2; i < 98; i++)
 {
 if (curr2 == 0 && prev2 == 0)
 {
