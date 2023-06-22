@@ -1,1 +1,1 @@
-int postive_or_negative(int n);
+int positive_or_negative(int n);
