@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _isdigit - checks if number is 0 -9
  * @c: The value to be checked
