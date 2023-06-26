@@ -8,6 +8,8 @@
  * The function iterates through the
  * string, counting the number of characters
  * until it reaches the null character.
+ *
+ * Return: integer length
  */
 int _strlen(char *s)
 {
