@@ -9,7 +9,7 @@
  * string, counting the number of characters
  * until it reaches the null character.
  *
- * Return: integer length
+ * Return: integer length (Success)
  */
 int _strlen(char *s)
 {
