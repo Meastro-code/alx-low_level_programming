@@ -6,6 +6,8 @@
  * This function takes two pointers
  * to characters as its parameters and copies
  * the string pointed to by src
+ *
+ * Return: dest as string
  */
 char *_strcpy(char *dest, char *src)
 {
