@@ -1,5 +1,5 @@
 /**
- * *cap_string - capitalise letters
+ * cap_string - capitalise letters
  * @s: string
  * 
  * Return: string
