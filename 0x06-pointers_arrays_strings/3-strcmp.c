@@ -1,5 +1,5 @@
 /**
- * int _strcmp - compares strings
+ * _strcmp - compares strings
  * @s1: first string
  * @s2: second string
  *
