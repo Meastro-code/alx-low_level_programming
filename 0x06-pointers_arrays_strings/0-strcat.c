@@ -1,7 +1,7 @@
 /**
  * char *_strcat - concatenates two strings
- * @*dest: the first string
- * @*src: the second string
+ * @dest: the first string
+ * @src: the second string
  *
  * Return: *dest
  */
