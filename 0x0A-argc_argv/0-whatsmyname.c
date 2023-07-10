@@ -4,9 +4,9 @@
  * @argc: first parameter
  * @argv: second parameter
  *
- * Return - 0
+ * Return: Always (0) Success
  */
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 if (argc == 0)
 {
