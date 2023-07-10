@@ -5,7 +5,7 @@
  * @argc: first parameter
  * @argv: second parameter
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Success) or 1 fail
  */
 int main(int argc, char *argv[])
 {
