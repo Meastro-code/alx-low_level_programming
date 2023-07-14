@@ -15,7 +15,7 @@ return (NULL);
 }
 if (ptr == NULL)
 {
-return (malloc(new_size));
+return malloc(new_size);
 }
 if (new_size == old_size)
 {
@@ -24,9 +24,17 @@ return (ptr);
 new_ptr = malloc(new_size);
 if (new_ptr != NULL)
 {
-unsigned int copy_size = (old_size < new_size) ? old_size : new_size;
+unsigned int copy_size;
+if (old_size < new_size)
+{
+copy_size = old_size;
+}
+else
+{
+copy_size = new_size;
 memcpy(new_ptr, ptr, copy_size);
 free(ptr);
+}
 }
 return (new_ptr);
 }
