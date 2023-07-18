@@ -3,45 +3,44 @@
 
 int _strlen(char *s)
 {
-    int i;
-
-    for (i = 0; s[i] != '\0'; i++)
-        ;
-
-    return (i);
+int i;
+for (i = 0; s[i] != '\0'; i++)
+{
+;
 }
-
+return (i);
+}
 void _puts(char *s)
 {
-    int i;
-
-    for (i = 0; s[i] != '\0'; i++)
-        putchar(s[i]);
+int i;
+for (i = 0; s[i] != '\0'; i++)
+{
+putchar(s[i]);
 }
-
+}
 void _print_error(void)
 {
-    _puts("Error");
-    putchar('\n');
-    exit(98);
+_puts("Error");
+putchar('\n');
+exit(98);
 }
-
 int _isdigit(char *s)
 {
-    int i;
-
-    for (i = 0; s[i] != '\0'; i++)
-        if (s[i] < '0' || s[i] > '9')
-            return (0);
-
-    return (1);
+int i;
+for (i = 0; s[i] != '\0'; i++)
+{
+if (s[i] < '0' || s[i] > '9')
+{
+return (0);
 }
-
+}
+return (1);
+}
 int main(int argc, char **argv)
 {
-    int len1, len2, len_res, carry, n1, n2, res;
-    int *result;
-    int i, j;
+int len1, len2, len_res, carry, n1, n2, res;
+int *result;
+int i, j;
 
     if (argc != 3 || !_isdigit(argv[1]) || !_isdigit(argv[2]))
         _print_error();
