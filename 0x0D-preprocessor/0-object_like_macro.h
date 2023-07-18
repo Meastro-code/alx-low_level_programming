@@ -1,9 +1,6 @@
-#ifndef HEADER_FILE_NAME_H
-#define HEADER_FILE_NAME_H
+#ifndef _SAMPLE_HEADER_H_
+#define _SAMPLE_HEADER_H_
 
 #define SIZE 1024
 
-#endif
-/**
- * HEADER_FILE_NAME_H
- */
+#endif /* _SAMPLE_HEADER_H_ */
