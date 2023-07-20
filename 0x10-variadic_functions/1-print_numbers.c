@@ -23,5 +23,5 @@ if (i > 0 && separator != NULL)
 }
 }
 va_end(args);
-printf("\n");
+_putchar('\n');
 }
