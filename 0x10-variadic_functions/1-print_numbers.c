@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stddef.h>
 #include <stdio.h>
+#include "_putchar.c"
 /**
  * print_numbers - Prints numbers, followed by a new line.
  * @separator: The string to be printed between numbers.
@@ -15,12 +16,12 @@ va_start(args, n);
 for (i = 0; i < n; i++)
 {
 num = va_arg(args, int);
+printf("%d",num);
 if (i > 0 && separator != NULL)
 {
-_putchar(*separator);
+  printf("%s",separator);
 }
-printf("%d", num);
 }
 va_end(args);
-_putchar('\n');
+printf("\n");
 }
