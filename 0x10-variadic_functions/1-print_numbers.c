@@ -16,11 +16,11 @@ va_start(args, n);
 for (i = 0; i < n; i++)
 {
 num = va_arg(args, int);
-printf("%d",num);
 if (i > 0 && separator != NULL)
 {
-  printf("%s",separator);
+printf("%s",separator);
 }
+printf("%d",num);
 }
 va_end(args);
 _putchar('\n');
