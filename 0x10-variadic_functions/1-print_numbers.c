@@ -23,5 +23,5 @@ printf("%s",separator);
 printf("%d",num);
 }
 va_end(args);
-_putchar('\n');
+printf("\n");
 }
