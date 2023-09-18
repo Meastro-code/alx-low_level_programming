@@ -3,8 +3,8 @@
  * @n: Pointer to  number where  bit will be set
  * @index: The index of the bit to set (0-based)
  *
- * Description: This function sets the bit 
- *at the specified index in the
+ * Description: This function sets the bit
+ * at the specified index in the
  * unsigned long integer pointed to by 'n' to 1
  *
  * Return: 1 if it worked or -1 if an error occurred
