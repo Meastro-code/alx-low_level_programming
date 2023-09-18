@@ -1,7 +1,7 @@
 /**
  * get_endianness - Checks endianness of system
  *
- * Description: This function checks 
+ * Description: This function checks
  * the endianness of the system by creating
  * an integer with a known byte order
  * and examining the first byte in memory
