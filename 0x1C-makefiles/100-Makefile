@@ -1,10 +1,10 @@
-#!/usr/bin/python3
+# Makefile for 'school' executable
 
 # Compiler
 CC = gcc
 
-# Source files (add more if needed)
-SRC = main.c school.c
+# Source files
+SRC = main.c file1.c file2.c
 
 # Object files (derived from source files)
 OBJ = $(SRC:.c=.o)
@@ -12,33 +12,34 @@ OBJ = $(SRC:.c=.o)
 # Executable name
 NAME = school
 
-# Compilation flags (optional, adjust as needed)
+# Program to delete files
+RM = rm -f
+
+# Compiler flags
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-# Default rule: build the executable
+# Default target: build the executable
 all: $(NAME)
 
-# Compile the source files into object files
-$(OBJ): %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-# Link the object files to create the executable
+# Rule to build the executable
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $@
+	$(CC) $(OBJ) -o $(NAME)
 
-# Clean up temporary files and the executable
+# Rule to clean up temporary files and the executable
 clean:
-	$(RM) $(OBJ) $(NAME)
+	$(RM) $(OBJ) $(NAME) *~ *.swp
 
-# Clean only the object files
+# Rule to delete object files
 oclean:
 	$(RM) $(OBJ)
 
-# Clean all files (including Emacs/Vim temp files, executable, and object files)
-fclean: clean
-	$(RM) $(NAME)
+# Rule to delete all temporary files, the executable, and object files
+fclean: clean oclean
 
-# Recompile all source files
+# Rule to force recompilation of all source files
 re: fclean all
+
+# Ensure that m.h exists (assumes it's included in the source files)
+$(SRC): m.h
 
 .PHONY: all clean oclean fclean re
