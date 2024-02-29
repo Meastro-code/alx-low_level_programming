@@ -12,9 +12,6 @@ OBJ = $(SRC:.c=.o)
 # Executable name
 NAME = school
 
-# Program to delete files
-RM = rm -f
-
 # Compilation flags (optional, adjust as needed)
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
@@ -29,18 +26,15 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $@
 
-# Clean up temporary files and the executable
+# Clean up temporary files
 clean:
-	$(RM) $(OBJ) $(NAME)
-
-# Clean only the object files
-oclean:
-	$(RM) $(OBJ)
+	rm -f $(OBJ)
 
 # Clean all files (including Emacs/Vim temp files, executable, and object files)
 fclean: clean
+	rm -f $(NAME)
 
 # Recompile all source files
 re: fclean all
 
-.PHONY: all clean oclean fclean re
+.PHONY: all clean fclean re
