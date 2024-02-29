@@ -22,16 +22,16 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(NAME)
 
 # Rule to build the executable
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+$(NAME): 
+	$(CC) -o $(NAME)
 
 # Rule to clean up temporary files and the executable
 clean:
-	$(RM) $(OBJ) $(NAME) *~ *.swp
+	$(RM)  $(NAME) *~ *.swp
 
 # Rule to delete object files
 oclean:
-	$(RM) $(OBJ)
+	$(RM) 
 
 # Rule to delete all temporary files, the executable, and object files
 fclean: clean oclean
