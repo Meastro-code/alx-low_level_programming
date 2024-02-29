@@ -2,24 +2,7 @@
 
 
 def island_perimeter(grid):
-"
-    Calculates the perimeter of the island described in the grid.
-
-    Args:
-        grid (List[List[int]]): A rectangular grid where 0 represents water and 1 represents land.
-
-    Returns:
-        int: The perimeter of the island.
-
-    Example:
-        Input: grid = [
-            [0, 1, 0, 0],
-            [1, 1, 1, 0],
-            [0, 1, 0, 0],
-            [1, 1, 0, 0]
-        ]
-        Output: 16
- "
+"Calculates the perimeter of the island described in the grid."
     rows, cols = len(grid), len(grid[0])
     perimeter = 0
 
